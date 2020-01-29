@@ -1,0 +1,625 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body{
+  background-color: #fff9e6;
+}
+
+.container{
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear:both;
+}
+
+
+
+/*--- header ---*/
+header{
+  height: 10vh;
+  background-color: #72be70;
+  width: 100%;
+  position:relative
+}
+
+.header-left{
+  float: left;
+}
+
+.header-right{
+  float: right;
+}
+
+.header-logo{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.header-list{
+  float: left;
+}
+
+.header-list li{
+  float: left;
+}
+
+
+.header-list a{
+  line-height: 10vh;
+  padding: 0 20px;
+  color: #fff9e6;
+  display: block;
+  transition: all 0.5s;
+  font-size: 16px;
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+  font-weight: bold;
+}
+
+.header-list a:hover{
+  background-color: #8fd48d;
+  color: rgb(71, 71, 71);
+  text-decoration: none;
+}
+
+.header-contact-btn{
+  float: right;
+  margin-top: 22px;
+  margin-left: 30px;
+}
+
+.h-contact-btn:hover{
+  box-shadow: 0 0 10px #fff9e6;
+}
+
+
+
+/* --- top-wrapper --- */ 
+.top-wrapper{
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.top-left{
+  width: 30vw;
+  height: 90vh;
+  position: relative;
+}
+
+.top-right{
+  width: 70vw;
+  height: 90vh;
+}
+
+.top-img{
+  width: 70vw;
+  height: 90vh;
+}
+
+.top-copy{
+  writing-mode: vertical-rl;
+  font-size: 33px;
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+  letter-spacing: 5px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+  color: #2e2e2e;
+}
+
+.indent{
+  text-indent: 1em;
+  white-space: nowrap;
+}
+
+
+
+/* ---concept-wrapper--- */
+.concept-wrapper{
+  margin-bottom: 80px;
+}
+
+.concept-txt{
+  width: 440px;
+  margin: 0 auto;
+}
+
+.concept-area{
+  display: flex;
+}
+
+.concept-left{
+  height: 400px;
+  width: 550px;
+  background-image: url(../images/concept-img.png);
+  background-size: cover;
+}
+
+.concept-right{
+  height: 400px;
+  width: 550px;
+}
+
+.concept-heading{
+  font-weight: normal;
+  font-size: 36px;
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+  position: relative;
+  margin-bottom: 60px;
+  line-height: 45px;
+  color: rgb(71, 71, 71);
+}
+
+.concept-heading:before {
+  content: '';
+  position: absolute;
+  left: 17%;
+  bottom: -30px; /*下線の上下位置調整*/
+  display: inline-block;
+  width: 150px; /*下線の幅*/
+  height: 1px; /*下線の太さ*/
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translate(-50%); /*位置調整*/
+  background-color: #2e2e2e; /*下線の色*/
+}
+
+.h-green{
+  color: #72be70;
+}
+
+.t-green{
+  color: #68a366;
+}
+
+.concept-txt p{
+  font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  line-height: 30px;
+  font-size: 16px;
+  text-align: justify;
+  color: rgb(71, 71, 71);
+}
+
+.concept-txt .t-bold{
+  font-weight: bold;
+}
+
+/* ---about-wrapper--- */
+.about-wrapper{
+  background-image: url(../images/cha-back.png);
+  background-size: cover;
+  padding: 80px 0;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.section-title{
+  font-weight: normal;
+  font-size: 36px;
+  text-align: center;
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+  letter-spacing: 5px;
+  position: relative; /* 下線を入れるときは必ず付ける */
+  margin-bottom: 100px;
+}
+
+.title-about:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -20px; /*下線の上下位置調整*/
+  display: inline-block;
+  width: 100px; /*下線の幅*/
+  height: 1px; /*下線の太さ*/
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translate(-50%); /*位置調整*/
+  background-color: #fff9e6; /*下線の色*/
+}
+
+.title-about{
+  color: #fff9e6;
+}
+
+.caption{
+  width: 1024px;
+  margin: 0 auto;
+}
+
+
+.about-img-1{
+  width: 847px;
+  height: 377px;
+  margin-left: auto;
+  margin-bottom: 80px;
+  background-image: url(../images/chasoba.png);
+}
+
+.caption1{
+  width: 446px;
+  height: 290px;
+  background-color: #fff9e6;
+  margin-right: auto;
+  position: absolute;
+  top: 50%;
+  -webkit-transform : translateY(-50%);
+  transform : translateY(-50%);
+  padding: 30px 0;
+}
+
+.about1{
+  position: relative;
+}
+
+
+.about-img-2{
+  width: 847px;
+  height: 377px;
+  margin-right: auto;
+  margin-bottom: 80px;
+  background-image: url(../images/chasenaka.png);
+}
+
+.caption2{
+  width: 446px;
+  height: 290px;
+  background-color: #fff9e6;
+  position: absolute;
+  top: 50%;
+  -webkit-transform : translateY(-50%);
+  transform : translateY(-50%);
+  right: 14%;
+  padding: 30px 0;
+}
+
+
+.about2{
+  position: relative;
+  width: 100vw;
+}
+
+.about-img-3{
+  width: 847px;
+  height: 377px;
+  background-color: skyblue;
+  margin-left: auto;
+  margin-bottom: 80px;
+  background-image: url(../images/chasado.png);
+}
+
+.caption3{
+  width: 446px;
+  height: 290px;
+  background-color: #fff9e6;
+  position: absolute;
+  margin-left: auto;
+  top: 50%;
+  -webkit-transform : translateY(-50%);
+  transform : translateY(-50%);
+  padding: 30px 0;
+}
+
+.about3{
+  position: relative;
+}
+
+.caption-txt{
+  width: 370px;
+  margin: 0 auto;
+}
+
+.caption-txt h4{
+  font-size: 30px;
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+  color: #72be70;
+  margin-bottom: 20px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.caption-txt p{
+  font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  text-align: justify;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: #2e2e2e;
+}
+
+
+
+/* --- article-wrapper --- */
+
+.title-article{
+  color: #2e2e2e;
+}
+
+.title-article:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -20px; /*下線の上下位置調整*/
+  display: inline-block;
+  width: 90px; /*下線の幅*/
+  height: 1px; /*下線の太さ*/
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translate(-50%); /*位置調整*/
+  background-color: #2e2e2e; /*下線の色*/
+}
+
+.articles{
+  display: flex;
+  justify-content: space-between;
+  color: #2e2e2e;
+  margin-bottom: 40px;
+}
+
+.article1{
+  height: 410px;
+  width: 320px;
+  transition: all 0.5s;
+  background-color: rgba(235, 226, 179, 0.3);
+}
+
+.article1:hover{
+  box-shadow: 0 0 30px #aaaaaa;
+  cursor: pointer;
+}
+
+.article1-img{
+  width: 320px;
+  height: 200px;
+  background-image: url(../images/chablog1.png);
+}
+
+.article2{
+  height: 410px;
+  width: 320px;
+  transition: all 0.5s;
+  background-color: rgba(235, 226, 179, 0.3);
+}
+
+.article2:hover{
+  box-shadow: 0 0 30px #aaaaaa;
+  cursor: pointer;
+}
+
+.article2-img{
+  width: 320px;
+  height: 200px;
+  background-image: url(../images/chablog2.png);
+}
+
+
+.article3{
+  height: 410px;
+  width: 320px;
+  transition: all 0.5s;
+  background-color: rgba(235, 226, 179, 0.3);
+}
+
+.article3:hover{
+  box-shadow: 0 0 30px #aaaaaa;
+  cursor: pointer;
+}
+
+.article3-img{
+  width: 320px;
+  height: 200px;
+  background-image: url(../images/chablog3.png);
+}
+
+
+.article-title{
+  height: 110px;
+  padding: 0 5px;
+}
+
+.article-title h5{
+  font-size: 22px;
+  padding: 20px 0;
+  font-weight: bold;
+  color: #2e2e2e;
+}
+
+.article-txt{
+  height: 100px;
+  padding: 0 5px;
+  color: #4e4e4e;
+}
+
+.article-txt p{
+  font-size: 12px;
+  text-align: justify;
+}
+
+.blog-button-area{
+  height: 60px;
+  margin-bottom: 80px;
+}
+
+.blog-btn{
+  height: 60px;
+  width: 360px;
+  margin: 0 auto;
+}
+
+.b-btn{
+  font-size: 16px;
+  display: block;
+  color: #72be70;
+  border: 1px solid #72be70;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.b-btn:hover{
+  background-color: #72be70;
+  color: #fff9e6;
+  text-decoration: none;
+}
+
+
+
+/* ---contact-wrapper--- */
+
+.contact-wrapper{
+  height: 450px;
+  background-image: url(../images/yoyaku-img.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contact-txt{
+  font-size: 30px;
+  text-align: center;
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+  color: #fff9e6;
+}
+
+.contact-message-area{
+  height: 450px;
+  position: relative;
+}
+
+.contact-message{
+  height: 200px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+}
+
+.c-btn{
+  display: block;
+  width: 480px;
+  height: 70px;
+  background-color: #72be70;
+  color: #fff9e6;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 70px;
+  text-align: center;
+  margin: 0 auto;
+  transition: all 0.5s;
+  border-radius: 5px;
+}
+
+.c-btn:hover{
+  box-shadow: 0 0 20px #fff9e6;
+  text-decoration: none;
+  color: #fff9e6;
+}
+
+/* ---footer--- */
+footer{
+  height: auto;
+  padding: 80px 0;
+}
+
+.footer-top{
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #6d6d6d;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-logo{
+  height: auto;
+  width: auto;
+}
+
+.footer-list{
+  height: auto;
+  width: auto;
+  position: relative;
+}
+
+.footer-bottom{
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.address{
+  height: auto;
+  width: auto;
+  font-size: 12px;
+  color: #2e2e2e;
+}
+
+.address p{
+  font-style:normal;
+}
+
+.copyright{
+  height: auto;
+  width: auto;
+  font-size: 12px;
+  position: relative;
+  color: #6d6d6d;
+}
+
+.copyright small{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 280px;
+} 
+
+
+.footer-list ul{
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.footer-list a{
+  display: inline-block;
+  margin-left: 20px;
+  color: #2e2e2e;
+  font-size: 12px;
+}
+
+.footer-list a:hover{
+  color: #68a366;
+  text-decoration: none;
+}
+
+.f-list-wrapper{
+  position: absolute;
+  width: 400px;
+  right: 0;
+  bottom: 0;
+}
